@@ -1,0 +1,58 @@
+/* CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Default background color */
+    color: #333; /* Default text color */
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-btn {
+    cursor: pointer;
+}
+
+.menu-btn {
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+}
+
+.menu-open {
+    left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
