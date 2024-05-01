@@ -1,0 +1,31 @@
+/* Additional styling for the signup form */
+.signup-container {
+    text-align: center; /* Center align the content */
+    max-width: 400px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.signup-container h2 {
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.signup-container label {
+    display: block; /* Display labels as block elements */
+    text-align: left; /* Left-align the labels */
+}
+
+.signup-container input,
+.signup-container select {
+    width: 100%; /* Make input fields and select full width */
+    padding: 10px; /* Add padding to input fields and select */
+    margin-bottom: 20px; /* Add margin below each input field and select */
+}
+
+.phone-number-input {
+    display: flex; /* Use flexbox to align phone number input elements */
+}
+
+.country-code-select {
+    flex: 1; /* Make the country code select take remaining space */
+    margin-right: 10px; /* Add margin between select and input */
+}

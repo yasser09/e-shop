@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form id="signup-form">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phonenumber">Phone Number:</label>
+            <div class="phone-number-input">
+                <select id="countrycode" name="countrycode" class="country-code-select">
+                    <!-- Country code options will be populated dynamically using JavaScript -->
+                </select>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required>
+            </div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Signup</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html" class="login-link">Login</a></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling for the navigation bar */
+        nav ul li.login-button, nav ul li.signup-button {
+            margin-left: auto; /* Push the buttons to the right */
+        }
+
+        nav ul li.login-button a, nav ul li.signup-button a {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue color for login button */
+            color: #fff; /* White text color */
+        }
+
+        nav ul li.login-button a:hover, nav ul li.signup-button a:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+
+        /* Additional styling for the signup form */
+        .signup-container {
+            text-align: center; /* Center align the content */
+            max-width: 400px; /* Limit the width of the form */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px; /* Add margin below the heading */
+        }
+
+        .signup-container label {
+            display: block; /* Display labels in block format */
+            margin-bottom: 10px; /* Add margin below each label */
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
+            width: calc(100% - 20px); /* Make input fields 100% width minus 20px for padding */
+            padding: 10px; /* Add padding to input fields */
+            margin-bottom: 20px; /* Add margin below each input field */
+        }
+
+        .signup-container button {
+            width: 100%; /* Make the button 100% width */
+            padding: 10px; /* Add padding to the button */
+        }
+
+        /* Additional styling for the login link */
+        .login-link {
+            margin-top: 20px; /* Add margin above the login link */
+            display: inline-block; /* Display the login link as a block element */
+            font-size: 14px; /* Decrease font size */
+            color: #6c757d; /* Match the color of the other links */
+            text-decoration: none; /* Remove underline */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <h1>My E-commerce Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#" onclick="showShoppingCart()">Cart (<span id="cart-count">0</span>)</a></li>
+                <li class="login-button"><a href="login.html">Login</a></li> <!-- Link to the login page -->
+                <li class="signup-button"><a href="signup.html">Signup</a></li> <!-- Link to the signup page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Product listings -->
+        <section id="product-listings"></section>
+        
+        <!-- Product details modal -->
+        <div id="product-details-modal" class="modal"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="style">
+        <p>&copy; 2024 My E-commerce Website</p>
+    </footer>
+</body>
+</html>
